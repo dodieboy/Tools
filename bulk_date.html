@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dodieboy Tools</title>
+		<script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+		<script src="js/batch_date.js"></script>
+	</head>
+	<body>
+		<h1>Bulk Date Printer</h1>
+		<label for="from">From:</label><br />
+		<input type="date" id="from" name="From" /><br />
+
+		<label for="to">To:</label><br />
+		<input type="date" id="to" name="To" /><br />
+
+		<label for="format">Format:</label><br />
+		<input type="text" id="format" name="Format" /> <br />
+		<label>Ex. MMM DD (dddd)</label> <br />
+		<input type="checkbox" id="linebreak" name="1 line break" />
+		<label>1 line break</label>
+
+		<br /><br />
+		<input type="button" onclick="print();" value="Print" />
+		<p id="result"></p>
+	</body>
+</html>
